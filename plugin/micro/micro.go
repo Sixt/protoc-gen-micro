@@ -14,8 +14,8 @@ import (
 // relative to the import_prefix of the generator.Generator.
 const (
 	contextPkgPath = "context"
-	clientPkgPath  = "github.com/micro/go-micro/client"
-	serverPkgPath  = "github.com/micro/go-micro/server"
+	clientPkgPath  = "github.com/sixt/com.sixt.lib.platform-go/x/micro/go-micro/client"
+	serverPkgPath  = "github.com/sixt/com.sixt.lib.platform-go/x/micro/go-micro/server"
 )
 
 func init() {
