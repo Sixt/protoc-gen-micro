@@ -1,4 +1,4 @@
-module github.com/micro/protoc-gen-micro
+module github.com/sixt/protoc-gen-micro
 
 go 1.13
 
