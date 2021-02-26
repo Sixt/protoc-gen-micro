@@ -127,7 +127,7 @@ func (g *micro) generateService(file *generator.FileDescriptor, service *pb.Serv
 	if pkg := file.GetPackage(); pkg != "" {
 		serviceName = pkg
 	}
-	fmt.Println("############ service name:", origServName)
+	fmt.Println("############ service name:", service.GetName(), "#######")
 	servName := generator.CamelCase(origServName)
 	servAlias := servName + "Service"
 
