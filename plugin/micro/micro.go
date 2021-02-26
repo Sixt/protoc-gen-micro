@@ -127,7 +127,6 @@ func (g *micro) generateService(file *generator.FileDescriptor, service *pb.Serv
 	if pkg := file.GetPackage(); pkg != "" {
 		serviceName = pkg
 	}
-	fmt.Println("############ service name:", service.GetName(), "#######")
 	servAlias := servName + "Service"
 
 	// strip suffix
