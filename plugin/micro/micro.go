@@ -122,13 +122,12 @@ func unexport(s string) string {
 func (g *micro) generateService(file *generator.FileDescriptor, service *pb.ServiceDescriptorProto, index int) {
 	path := fmt.Sprintf("6,%d", index) // 6 means service.
 
-	origServName := service.GetName()
+	servName := service.GetName()
 	serviceName := strings.ToLower(service.GetName())
 	if pkg := file.GetPackage(); pkg != "" {
 		serviceName = pkg
 	}
 	fmt.Println("############ service name:", service.GetName(), "#######")
-	servName := generator.CamelCase(origServName)
 	servAlias := servName + "Service"
 
 	// strip suffix
